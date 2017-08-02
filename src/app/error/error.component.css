@@ -1,0 +1,10 @@
+.error{
+	position: absolute;
+    background-color: #1D2C41;
+    width: 100%;
+    height: 100%;
+}
+
+.error p{
+	margin: 20%;
+}

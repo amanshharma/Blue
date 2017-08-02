@@ -1,0 +1,205 @@
+.sayhello{
+	background-color: #1D2C41;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+
+}
+
+.wrap-sayhello{
+	width: 45%;
+    margin-top: 160px;
+}
+
+.sayhello .row{
+	margin-top: 5%;
+}
+
+.sayhello img{
+	width: 100px;
+    
+}
+
+.md-focused {
+	color: #fba100;
+}
+
+
+.sayhello .col {
+	padding: 0;
+}
+
+.yy-color{
+	color: #fba100;
+}
+
+.sayhello [md-raised-button]:hover {
+	background-color: white;
+	color: #fba100;
+}
+
+.sayhello [md-raised-button] {
+	color: white;
+	background-color: #fba100;
+}
+
+
+.wrapper-for-centering{
+	display: flex;
+	justify-content: center;
+}
+
+.font-size{
+    font-size: 1em;
+  }
+@media (min-width: 768px){
+  .thanks_h1{
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-size: 3em;
+    color: #42699e;
+  }
+  .thanks_h2{
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #42699e;
+    font-size: 1em;
+  }
+
+  .checkmark {
+  width: 56px;
+  height: 56px;
+}
+
+}
+@media (max-width: 768px){
+ 
+	.sayhello img{
+		width: 49px;
+    	height: 65px;
+	}
+
+	.wrap-sayhello {
+    width: 70%;
+    margin-top: 89px;
+	}
+	.wrap-sayhello h2{
+   		font-size: 1.22rem;
+	}
+
+  .font-size{
+    font-size: 14px;
+  }
+
+  .thanks_h1{
+    font-size: 2em;
+  }
+  .thanks_h2{
+    font-size: 0.9em;
+  }
+
+   .checkmark {
+  width: 48px;
+  height: 48px;
+}
+	
+}
+
+@media (max-width: 375px){
+	.wrap-sayhello {
+    width: 95%;
+    margin-top: 89px;
+  }
+  .font-size{
+    font-size: 12px;
+  }
+  button{
+    line-height: 24px;
+    min-width: 0;
+    font-size: 13px;
+  }
+
+  .thanks_h1{
+    font-size: 1.2em;
+  }
+  .thanks_h2{
+    font-size: 0.8em;
+  }
+
+  .checkmark {
+  width: 40px;
+  height: 40px;
+}
+
+}
+
+.input_width{
+	width: 100%;
+}
+
+
+
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #fff;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark {
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  margin: 10% auto;
+  box-shadow: inset 0px 0px 0px #fff;
+  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes scale {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #fba100;
+  }
+}
+
+
+.thanks{
+	text-align: center;
+}
+
+
+.copyryght-desktop{
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
+    color: #667b98;
+    text-align: center;
+    right: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+

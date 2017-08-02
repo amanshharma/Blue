@@ -1,0 +1,81 @@
+<div class="sayhello">
+	<div class="wrap-sayhello">
+
+		
+		<md-card >	
+			<div *ngIf="!submitted">
+				<div class="row yy-color">
+					<h2 style="text-align: center;">Say Hello!!</h2><br>
+				</div>
+
+				<div class="row wrapper-for-centering">
+					
+					<div class="col g10">									
+
+						<form [formGroup]="myForm" novalidate (ngSubmit)="save(myForm.value, myForm.valid)" id="myForm" class="font-size">
+						 
+						    <md-input-container class="form-group input_width">
+						     	<md-placeholder>
+						     		<md-icon>face</md-icon> Name
+						     	</md-placeholder>
+				            	<input mdInput class="form-control" formControlName="name">
+				            	<md-error>This field is required</md-error>
+				          	</md-input-container>
+
+				          	<br>
+
+				          	<md-input-container class="form-group input_width">
+						     	<md-placeholder>
+						     		<md-icon>email</md-icon> EmailId
+						     	</md-placeholder>
+				            	<input mdInput class="form-control" formControlName="email">
+				            	<md-error *ngIf="myForm.controls.email.hasError('required')">This field is required</md-error>
+				            	<md-error *ngIf="myForm.controls.email.hasError('pattern')">Please provide a valid emailId</md-error>
+				          	</md-input-container>
+
+				          	<br>
+
+				          	<md-input-container class="form-group input_width">
+						     	<md-placeholder>
+						     		<md-icon>message</md-icon> Message
+						     	</md-placeholder>
+				            	<textarea mdInput class="form-control" formControlName="message" rows="5"></textarea>
+				            	<md-error>This field is required</md-error>
+				          	</md-input-container>
+
+				          	<br><br>
+
+				          	<button md-raised-button type="submit">Submit</button>
+				          	
+				           
+				           
+				           
+				          
+						</form>
+					</div>
+				</div>
+			</div>
+				
+
+			<div *ngIf="submitted" class="thanks">
+				<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>  
+				<div class="thanks_h1">Thanks for reaching out!</div>
+				<div class="thanks_h2">Your message just showed up in my inbox. Talk to you soon!</div>
+				<br><br>
+				<button md-raised-button routerLink="/home">BACK TO HOME</button>
+			</div>
+
+		</md-card>
+
+		
+		
+
+	</div>
+</div>
+
+<!-- <p class="copyryght-desktop">
+   all work © Aman Deep Sharma 2017 • all rights reserved • to license images, get in touch
+</p> -->
+
+
+

@@ -1,0 +1,335 @@
+md-sidenav-layout.m2app-dark {
+  background: black;
+}
+
+.app-content {
+  padding: 20px;
+}
+
+.app-content md-card {
+  margin: 20px;
+}
+
+.app-sidenav {
+  padding: 10px;
+  min-width: 100px;
+}
+
+.app-content md-checkbox {
+  margin: 10px;
+}
+
+.app-toolbar-filler {
+  flex: 1 1 auto;
+}
+
+.app-toolbar-menu {
+  padding: 0 14px 0 14px;
+  color: white;
+}
+
+.app-icon-button {
+  box-shadow: none;
+  user-select: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  filter: none;
+  font-weight: normal;
+  height: auto;
+  line-height: inherit;
+  margin: 0;
+  min-width: 0;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+}
+
+.app-action {
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.app-spinner {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+}
+
+.app-input-icon {
+  font-size: 16px;
+}
+
+.app-list {
+  border: 1px solid rgba(0,0,0,0.12);
+  width: 350px;
+  margin: 20px;
+}
+
+.app-progress {
+  margin: 20px;
+}
+
+
+
+
+
+
+md-sidenav-layout.m2app-dark {
+  background: black;
+}
+
+.app-content {
+  padding: 20px;
+}
+
+.app-content md-card {
+  margin: 20px;
+}
+
+.app-sidenav {
+  padding: 10px;
+  min-width: 100px;
+}
+
+.app-content md-checkbox {
+  margin: 10px;
+}
+
+.app-toolbar-filler {
+  flex: 1 1 auto;
+}
+
+.app-toolbar-menu {
+  padding: 0 14px 0 14px;
+  color: white;
+}
+
+.app-icon-button {
+  box-shadow: none;
+  user-select: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  filter: none;
+  font-weight: normal;
+  height: auto;
+  line-height: inherit;
+  margin: 0;
+  min-width: 0;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+}
+
+.app-action {
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.app-spinner {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+}
+
+.app-input-icon {
+  font-size: 16px;
+}
+
+.app-list {
+  border: 1px solid rgba(0,0,0,0.12);
+  width: 350px;
+  margin: 20px;
+}
+
+.app-progress {
+  margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+.parent{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 3px 0 0 rgba(0,0,0,0.07);
+}
+
+.parent .item a {
+    background: #dedede;
+    height: 2.75em;
+    width: 2.75rem;
+    display: block;
+    position: relative;
+    border-radius: 50%;
+}
+
+.parent .item a svg{
+  display: block;
+  height: 1.25rem;
+  width: 1.25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.parent .item2{
+  margin-right: auto;
+}
+
+.parent .item img{
+    transition: all 550ms ease;
+    
+
+  }
+
+
+
+
+
+.parent .padSayHello{
+  padding-right: 6%;
+}
+
+.parent .padResume{
+  padding: 0 30px;
+}
+
+.parent .padMainLogo{
+  padding-left: 4%;
+}
+
+.parent .padTwitterlogo{
+  padding-right: 20px;
+}
+
+.parent .padBlog{
+  padding-right: 30px;
+}
+
+.parent img{
+  height: 100px;
+  cursor: pointer;
+
+}
+.parent .item .yellow:hover{
+  background-color: #fba100;
+}
+
+
+
+
+
+@media (max-width: 770px){
+  .parent .padResume{
+      padding: 0 15px;
+  }
+  .parent .padBlog{
+      padding-right: 15px;
+  }
+
+  .medium {
+    font-size: 0.875em;
+    line-height: 2.25rem;
+    width: 76px;
+  }
+  .parent .item img{
+    width: 73px;
+    height: 73px;
+  }
+}
+
+@media (max-width: 667px) {
+  
+
+  .parent .item a{
+    background-color: #fba100;
+  }
+
+  .landingArea{
+    display: block;
+  }
+
+  .twitterLogo{
+    display: none;
+  }
+  .facebookLogo{
+    display: none;
+  }
+
+}
+
+@media (max-width: 602px) {
+  .parent .resumed{
+    display: none;
+  }
+  .parent .blogd{
+    display: none;
+  }
+  .parent .sayhellod{
+    display: none;
+  }
+
+  .parent .item a{
+    background-color: #fba100;
+  }
+
+  .landingArea{
+    display: block;
+  }
+
+}
+
+@media (min-width: 603px){
+  .parent .resumep {
+    display: none;
+  }
+  .parent .blogp {
+    display: none;
+  }
+  .parent .sayhellop {
+    display: none;
+  }
+
+  
+}
+@media(max-width: 420px){
+ .parent .item img{
+    width: 73px;
+    height: 73px;
+  }
+}
+
+@media (max-width: 320px){
+    .twitterLogo{
+      display: none;
+    }
+    .facebookLogo{
+      display: none;
+    }
+    .parent .padTwitterlogo {
+    padding-right: 10px;
+}
+}
+
+

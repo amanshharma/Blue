@@ -1,0 +1,383 @@
+body{
+  overflow: hidden;
+    overflow-y: auto;
+  text-rendering: optimizeLegibility;
+  width: 100%;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.landingArea{
+    color: #fff;
+    display: flex;
+    position: absolute;
+    background: #1D2C41;
+    height: 100%;
+    width: 100%;
+    min-height: 900px;
+    overflow: hidden;
+}
+
+.landingArea .description{
+    width: 50%;
+    margin-top: 170px;
+    margin-left: 8%;
+}
+
+.landingArea .description p{
+   margin-right: 20%;
+   text-align: justify;
+}
+
+.landingArea .picture{
+   
+    margin-top: 170px;
+    margin-right: 6%;
+}
+
+.landingArea h1 span {
+  display: block;
+  opacity: 0;
+
+  -webkit-transform: translateX(100px);
+     -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+     -o-transform: translateX(100px);
+      transform: translateX(100px);
+ }
+
+ .landingArea.visible h1 span {
+  opacity: 1;
+
+  -webkit-transform: translateX(0px);
+     -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+     -o-transform: translateX(0px);
+      transform: translateX(0px);
+
+}
+
+.landingArea h1 span {
+  -webkit-transition: all 1250ms ease 500ms;
+       -moz-transition: all 1250ms ease 500ms;
+        -ms-transition: all 1250ms ease 500ms;
+         -o-transition: all 1250ms ease 500ms;
+            transition: all 1250ms ease 500ms;
+}
+
+.landingArea h1 span + span {
+  -webkit-transition: all 1250ms ease 1250ms;
+       -moz-transition: all 1250ms ease 1250ms;
+        -ms-transition: all 1250ms ease 1250ms;
+         -o-transition: all 1250ms ease 1250ms;
+            transition: all 1250ms ease 1250ms;
+}
+
+.landingArea h1 span + span + span {
+  -webkit-transition: all 1250ms ease 2000ms;
+       -moz-transition: all 1250ms ease 2000ms;
+        -ms-transition: all 1250ms ease 2000ms;
+         -o-transition: all 1250ms ease 2000ms;
+            transition: all 1250ms ease 2000ms;
+}
+
+
+.landingArea p {
+  display: block;
+  opacity: 0;
+
+  -webkit-transform: translateY(100px);
+     -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+     -o-transform: translateY(100px);
+      transform: translateY(100px);
+
+  -webkit-transition: all 1250ms ease 2750ms;
+       -moz-transition: all 1250ms ease 2750ms;
+        -ms-transition: all 1250ms ease 2750ms;
+         -o-transition: all 1250ms ease 2750ms;
+            transition: all 1250ms ease 2750ms;
+}
+
+.landingArea.visible p {
+  opacity: 1;
+
+  -webkit-transform: translateY(0px);
+     -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+     -o-transform: translateY(0px);
+      transform: translateY(0px);
+
+}
+
+.landingArea h1 {
+  font-size: 5.5rem;
+  line-height: 1em;
+  margin-bottom: 2.5rem;
+
+}
+
+
+.landingArea p { line-height: 1.625rem; }
+
+
+.pic-wrapper-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.my-pic {
+
+    position: relative;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-color: #fe424d;
+    background-size: cover;
+    background-position: 28%;
+    z-index: 0;
+    transition: box-shadow 1s ease;
+
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/amandeep-72851.appspot.com/o/mypic.JPG?alt=media&token=e4f2c771-ab41-40a1-9f35-4025454de63c");
+    box-shadow: #fba100 0px 0px 30px;
+
+    -webkit-transition: all 500ms ease;
+       -moz-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+         -o-transition: all 500ms ease;
+            transition: all 500ms ease;
+
+}
+
+.my-pic:after{
+  content: 'Hi';
+    color: #fba100  ;
+    position: absolute;
+    top: 82%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 5em;
+    z-index: 100;
+    font-weight: 700;
+    text-shadow: 9px -9px 0 #201e1e;
+    font-family: Rajdhani,serif;
+
+    -webkit-transition: all 500ms ease;
+       -moz-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+         -o-transition: all 500ms ease;
+            transition: all 500ms ease;
+}
+
+.pic-description{
+  display: flex;
+  justify-content: center;
+  margin-top: 11%;
+}
+
+.pic-description span{
+  display: block;
+  font-size: 1.25rem;
+}
+
+.pic-description span span{
+  display: inline;
+  color: #fba100;
+}
+
+.pic-description span + span{
+  margin-left: 15%;
+}
+
+
+
+
+@keyframes changeText {
+  0% {
+    content: "Software Engineer";
+    opacity: 1;
+  }
+  25%{
+    opacity: 0;
+  }
+  50% {
+    content: "Web Developer";
+    opacity: 1;
+  }
+  75%{
+    opacity: 0;
+  }
+  100% {
+    content: "Blogger";
+    opacity: 1;
+  }
+}
+
+
+.text-changer:after {
+  content: '';
+  opacity: 0;
+  color: #fba100;
+  font-weight: bold;
+  animation: changeText 6s linear infinite;
+  transition: 4s ease-in-out;
+}
+
+.parent{
+  display: flex;
+  justify-content: center;
+}
+
+.parent .item a {
+    background: #fff;
+    height: 22px;
+    width: 22px;
+    display: block;
+    position: relative;
+    border-radius: 50%;
+}
+
+.parent .item a svg{
+  display: block;
+  width: 11px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.parent .item a i{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 12px;
+  color: #fba100;
+}
+.parent .padLogo{
+  padding: 16px 4px;
+}
+
+
+/*responsive*/
+
+@media (max-width: 760px){
+  .landingArea h1 {
+    font-size: 2.0rem;  
+    margin-bottom: 1.5rem;
+    margin-left: 1.5rem;
+  }
+  .landingArea p {
+    margin-left: 1.5rem;
+  }
+  .landingArea .description{
+    margin-top: 115px;
+    
+  }
+  .landingArea .picture{
+    width: 45%;
+    margin-top: 105px;
+    margin-right: 4%;
+}
+  
+}
+@media (min-width: 668px){
+  .parent{
+  display: none;
+  
+}
+.copyryght-phone{
+  display: none;
+}
+  
+}
+
+@media (max-width: 667px){
+  .landingArea{
+    flex-direction: column;
+  }
+  .copyryght-desktop{
+    display: none;
+  }
+  .landingArea .description{
+    margin-top: 115px;
+    width: 84%;
+    margin-right: 8%;
+  }
+  .landingArea .picture{
+    width: 84%;
+    margin-top: 60px;
+    margin-right: 8%;
+    margin-left: 8%;
+   }
+
+   .landingArea h1 {
+    font-size: 2.0rem;  
+    margin-bottom: 1.5rem;
+    margin-left: 1.5rem;
+  }
+  
+}
+
+@media (max-width: 375px){
+   .landingArea h1 {
+    font-size: 2.0rem;  
+    margin-bottom: 1.5rem;
+    margin-left: 1.5rem;
+  }
+  
+
+  .landingArea .description{
+    margin-top: 110px;
+  }
+  .pic-description span {
+    font-size: 1.1rem;
+  }
+ 
+  .my-pic:after{
+  
+    font-size: 4em;
+   
+  }
+
+  .landingArea p {
+  display: block;
+  opacity: 0;
+
+  -webkit-transform: translateY(40px);
+     -moz-transform: translateY(40px);
+    -ms-transform: translateY(40px);
+     -o-transform: translateY(40px);
+      transform: translateY(40px);
+
+  -webkit-transition: all 1250ms ease 2750ms;
+       -moz-transition: all 1250ms ease 2750ms;
+        -ms-transition: all 1250ms ease 2750ms;
+         -o-transition: all 1250ms ease 2750ms;
+            transition: all 1250ms ease 2750ms;
+  }
+}
+
+
+
+.copyryght-desktop{
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
+    color: #667b98;
+    text-align: center;
+    right: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.copyryght-phone{
+   font-size: 12px;
+    color: #667b98;
+    text-align: center;
+}
+
