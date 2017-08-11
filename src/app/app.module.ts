@@ -7,7 +7,7 @@ import { MaterialModule } from '@angular/material';
 //import { TypingCarouselDirective } from 'ng2-typing-carousel';
 import { SharedModule } from './shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AngularFireModule } from 'angularfire2';
+//import { AngularFireModule } from 'angularfire2';
 import {MdInputModule} from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -23,13 +23,13 @@ import {SharedService} from './shared.service';
 
 
 
-export const firebaseConfig = {
+/*export const firebaseConfig = {
   apiKey: 'AIzaSyCU08c3nIKEV31SEFJhP1fo3CdFbxAqP3k',
   authDomain: 'amandeep-72851.firebaseapp.com',
   databaseURL: 'https://amandeep-72851.firebaseio.com/',
   storageBucket: 'gs://amandeep-72851.appspot.com',
   messagingSenderId: '<your-messaging-sender-id>'
-};
+};*/
 
 @NgModule({
   declarations: [
@@ -82,7 +82,7 @@ export const firebaseConfig = {
     MaterialModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    AngularFireModule.initializeApp(firebaseConfig),
+    //AngularFireModule.initializeApp(firebaseConfig),
     SharedModule,
     MdInputModule
   

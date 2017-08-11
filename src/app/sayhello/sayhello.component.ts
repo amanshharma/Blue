@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, OnChanges, ChangeDetectorRef, ApplicationRef } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
-import { AngularFire, FirebaseListObservable } from 'angularfire2';
+//import { AngularFire, FirebaseListObservable } from 'angularfire2';
+//import { AngularFire } from 'angularfire2';
 import {ActivatedRoute} from '@angular/router';
 import { User } from './user.interface';
 import {AppComponent} from '../app.component';
@@ -30,7 +31,7 @@ export class SayhelloComponent implements OnInit {
   fform:any;
   
 
-    constructor(private _fb: FormBuilder, private af: AngularFire, private app: AppComponent) { 
+    constructor(private _fb: FormBuilder,  private app: AppComponent) { 
         
         this.value = app.subject.asObservable();
         
@@ -63,7 +64,7 @@ export class SayhelloComponent implements OnInit {
         if(isValid){
               this.submitted = true;
               console.log(model);
-              this.af.database.list("https://amandeep-72851.firebaseio.com/form").push(model);
+              //this.af.database.list("https://amandeep-72851.firebaseio.com/form").push(model);
               this.myForm.reset()
         }
        
