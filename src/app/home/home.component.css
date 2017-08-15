@@ -141,7 +141,7 @@ body{
     z-index: 0;
     transition: box-shadow 1s ease;
 
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/amandeep-72851.appspot.com/o/mypic.JPG?alt=media&token=e4f2c771-ab41-40a1-9f35-4025454de63c");
+    background-image: url("/assets/mypic.JPG");
     box-shadow: #fba100 0px 0px 30px;
 
     -webkit-transition: all 500ms ease;

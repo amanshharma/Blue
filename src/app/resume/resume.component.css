@@ -19,7 +19,7 @@
 
 .selfSummary .section-content{
 	font-size: 1.2em;
-	padding: 0 20%;
+	padding: 0 20% 2% 20%;
   text-align: justify;
 }
 
@@ -132,7 +132,7 @@ svg{
 }
 
 .skills .section-content{
-  padding: 0 25%;
+  padding: 0 25% 3% 25%;
 }
 
 h2{
@@ -163,6 +163,7 @@ h2{
   display: flex;
   justify-content: center;
   margin-bottom: 5%;
+  padding-bottom: 3%;
 }
 
 .education-wrapper .line{
@@ -543,4 +544,13 @@ h2{
     -ms-transform: translateX(0px) perspective( 600px ) rotateY( 0deg );
      -o-transform: translateX(0px) perspective( 600px ) rotateY( 0deg );
       transform: translateX(0px) perspective( 600px ) rotateY( 0deg );
+}
+
+
+.img_undercons{
+  width: 22%;
+  text-align: center;
+  position: absolute;
+  height: 22%;
+  right: 39%;
 }

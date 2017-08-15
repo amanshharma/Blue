@@ -1,5 +1,6 @@
 .blog p{
 	margin-top: 150px;
+	text-align: center;
 }
 
 .copyryght-desktop{
@@ -11,4 +12,17 @@
     right: auto;
     left: 50%;
     transform: translate(-50%, 0);
+}
+
+.img_undercons{
+  width: 22%;
+  text-align: center;
+  position: absolute;
+  height: 22%;
+  right: 39%;
+}
+
+.main-top-margin{
+	margin-top: 150px;
+  background-color: #1D2C41;
 }
